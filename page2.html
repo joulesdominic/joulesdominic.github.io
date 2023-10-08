@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <link rel="stylesheet" href="styles/styles2.css">
+    <link rel="stylesheet" href="styles/variables-palette-7.css">
+</head>
+<body>
+    <div class="header">
+        Advanced Art Work Search
+    </div>
+    <div>
+        <form action="http://www.randyconnolly.com/tests/process.php" method="post">
+            <div class="searchbar">
+                <input type="search" name="search" value="Portrait">
+                Subject: 
+                <input type="radio" name="subject" value="History"> History
+                <input type="radio" name="subject" value="Person"> Person
+                <input type="radio" name="subject" value="Landscape" checked> Landscape
+                <select id="genre" name="filter">
+                <option value="0">Neo-Classicism</option>
+                <option value="1">Baroque</option>
+                <option value="2">Renaissance</option>
+                <option value="3">Realism</option>
+                <option value="4">Dutch Golden Age</option>
+            </select>
+            </div>
+            
+            <div class="subhead">
+                Paintings
+            </div>
+
+            <div class="all-tables">
+                <div>
+                    <table class="title-tags">
+                        <tr>
+                            <td id="title">Title</td>
+                            <td id="artist">Artist</td>
+                            <td id="year">Year</td>
+                            <td id="genre">Genre</td>
+                            <td id="action">Actions</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <td class="check">
+                                <input type="checkbox" name="index[]" value="0">
+                                <div class="paint" id="first"></div>
+                            </td>
+                            <td>Portrait of Something</td>
+                            <td>Bob</td>
+                            <td>1850</td>
+                            <td>Realism</td>
+                            <td><button class="edit" type="button"></button></td>
+                            <td><button class="archive" type="button"></button></td>
+                            <td><button class="trash" type="button"></button></td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <td class="check">
+                                <input type="checkbox" name="index[]" value="1">
+                                <div class="paint" id="second"></div>
+                            </td>
+                            <td>Random Pic</td>
+                            <td>Studd</td>
+                            <td>1833</td>
+                            <td>Baroque</td>
+                            <td><button class="edit" type="button"></button></td>
+                            <td><button class="archive" type="button"></button></td>
+                            <td><button class="trash" type="button"></button></td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <td class="check">
+                                <input type="checkbox" name="index[]" value="2">
+                                <div class="paint" id="third"></div>
+                            </td>
+                            <td>Photo of Something</td>
+                            <td>Bruce</td>
+                            <td>1895</td>
+                            <td>Neo-Classicism</td>
+                            <td><button class="edit" type="button"></button></td>
+                            <td><button class="archive" type="button"></button></td>
+                            <td><button class="trash" type="button"></button></td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <td class="check">
+                                <input type="checkbox" name="index[]" value="3">
+                                <div class="paint" id="fourth"></div>
+                            </td>
+                            <td>Picture</td>
+                            <td>Clark</td>
+                            <td>1879</td>
+                            <td>Dutch Golden Age</td>
+                            <td><button class="edit" type="button"></button></td>
+                            <td><button class="archive" type="button"></button></td>
+                            <td><button class="trash" type="button"></button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div>
+                <select id="actions" name="actions">
+                    <option value="0">Edit</option>
+                    <option value="1">Archive</option>
+                    <option value="2">Trash</option>
+                </select>
+                <button type="submit" id="apply-all">Apply To All</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+.edit {
+    background-image: url("../images/edit.png");
+}
+
+.archive {
+    background-image: url("../images/collection.png");
+}
+
+.trash {
+    background-image: url("../images/delete.png");
+}
+
+.edit, .archive, .trash {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+}
+
+.edit:active, .archive:active, .trash:active {
+    background-color: var(--color-primary-1-300);
+}
+
+.check {
+    display: flex;
+    align-items: center;
+}
+
+.paint {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+}
+#first {
+    background-image: url("../images/125010.jpg");
+}
+
+#second {
+    background-image: url("../images/125020.jpg");
+}
+
+#third {
+    background-image: url("../images/127010.jpg");
+}
+
+#fourth {
+    background-image: url("../images/128010.jpg");
+}
+
+div {
+    margin: 10px;
+}
+
+.header {
+    font-weight: 500;
+    font-size: 25px;
+    background-color: var(--color-primary-1-900);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.searchbar {
+    font-weight: 400;
+    padding: 15px;
+    background-color: var(--color-neutral-100);
+}
+
+.subhead {
+    font-weight: 300;
+    font-size: 20px;
+    padding: 15px;
+    background-color: var(--color-primary-1-800);
+    text-align: center;
+    color: white;
+}
+
+.all-tables {
+    background-color: var(--color-neutral-100);
+}
+
+table {
+    border-bottom: 1px solid black;
+}
+
+#apply-all {
+    background-color: var(--color-primary-1-600);
+    color: white;
+}
+
+.title-tags {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+}
+
+#title {
+    padding-left: 10em;
+    padding-right: 20em;
+}
+
+#artist {
+    padding-right: 10em;
+}
+
+#year {
+    padding-right: 5em;
+}
+
+#genre {
+    padding-right: 10em;
+}
